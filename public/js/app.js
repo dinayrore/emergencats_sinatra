@@ -1,15 +1,20 @@
-// Create Task
-// AddTask btn on click(createTask)
+var $catName = $('.catName')
 
-// function createTask() {
-//   $.ajax({
-//     method: 'POST',
-//     url: '/api/tasks',
-//     data: {
-//       title: $taskTitle.val();
-//       status: $taskStatus.val();
-//       priority: $taskPriority.val();
-//     },
-//     dataType: 'json'
-//   });
-// }
+function createCats () {
+  return $.ajax({
+      method: 'POST',
+      url: '/api/cat',
+      dataType: 'json'
+      data: {
+        name: $catName.val();
+        gender: $taskGender.val();
+        species: $taskSpecies.val();
+        attitude: $taskAttitude.val()
+      },
+
+    });
+}
+
+module.exports = createCats
+
+// click on paw hide main site stuff show that cat

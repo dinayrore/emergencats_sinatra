@@ -11,7 +11,7 @@ describe 'The Emergencats App' do
       'name' => 'Rufus',
       'gender' => 'M',
       'species' => 'Tabby',
-      'attitude' => 'Feisty'
+      'attitude' => 'Quirky'
     }
   end
 
@@ -49,7 +49,7 @@ describe 'The Emergencats App' do
     end
 
     it 'searches for a cat by attitude' do
-      get '/api/cats?attitude=Feisty'
+      get '/api/cats?attitude=Quirky'
       expect(last_response.status).to eq(200)
       expect(last_response.body).to include('Rufus')
     end

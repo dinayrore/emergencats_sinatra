@@ -1,0 +1,24 @@
+{
+  "name": "emergencat_app",
+  "version": "1.0.0",
+  "description": "To run the application..., please visit the heroku link:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kteich88/emergencats.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kteich88/emergencats/issues"
+  },
+  "homepage": "https://github.com/kteich88/emergencats#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.1.2"
+  }
+}

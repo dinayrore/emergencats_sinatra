@@ -1,5 +1,6 @@
 require 'sinatra'
 require_relative 'models/cat'
+require 'active_record'
 
 ActiveRecord::Base.establish_connection(ENV['DATABASE_URL'])
 
@@ -43,12 +44,16 @@ get '/api/cats' do
 end
 
 put '/api/cat/:id' do |id|
-  cat = Cat.find(id)
+  cat = Cat.find_by_id(id)
   cat.update(name: params[:name]) unless params[:name].nil?
+  cat.update(attitude: params[:attitude]) unless params[:attitude].nil?
+  status 200
   cat.to_json
 end
 
-delete '/api/thing/:id' do |id|
+delete '/api/cat/:id' do |id|
   cat = Cat.find_by_id(id)
   cat.destroy
+  status 200
+  Cat.all.to_json
 end
