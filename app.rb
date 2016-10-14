@@ -43,24 +43,12 @@ get '/api/cats' do
 end
 
 put '/api/cat/:id' do |id|
-  status 200
+  cat = Cat.find(id)
+  cat.update(name: params[:name]) unless params[:name].nil?
+  cat.to_json
 end
-# # PUT /api/ - update & read request body as JSON
-# put '/api/thing/:id' do |id|
-#   name = params['name']
-#   number = params['number']
-#
-#   thing = Class.find_by_id(id)
-#
-#   thing.update(name: name) unless name.nil?
-#   thing.update(number: number) unless number.nil?
-#
-#   status 200
-#   thing.to_json
-# end
-#
 
 delete '/api/thing/:id' do |id|
-#   thing = Class.find_by_id(id)
-#   thing.destroy
+  cat = Cat.find_by_id(id)
+  cat.destroy
 end
