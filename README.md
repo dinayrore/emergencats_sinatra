@@ -79,3 +79,5 @@ Please complete the following procedure to run the program on a live system:
 * Bryce Darling and Jimothy
 * Alyssa Pratt and Frisk
 * Jefferson Neel and Rika
+* Gabriel Estes and Rosy
+* Nate Semmler and Carson

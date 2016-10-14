@@ -1,13 +1,291 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="styles/main.css">
-    <meta charset="utf-8">
-    <title>Tab Title</title>
-  </head>
-  <body>
+<html lang="en">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="js/app.js"></script>
-  </body>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Emergencats</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/full-slider.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Emergencats</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">Create</a>
+                    </li>
+                    <li>
+                        <a href="#">Read</a>
+                    </li>
+                    <li>
+                        <a href="#">Update</a>
+                    </li>
+                    <li>
+                        <a href="#">Delete</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Full Page Image Background Carousel Header -->
+    <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item">
+              <div class="fill" style="background-image:url('img/black.png');"></div>
+                <div class="carousel-caption">
+                    <h2>Shadow</h2>
+                </div>
+            </div>
+            <div class="item active">
+                <div class="fill" style="background-image:url('img/brown-socks.png');"></div>
+                <div class="carousel-caption">
+                    <h2>Brown Socks</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('img/calico.png');"></div>
+                <div class="carousel-caption">
+                    <h2>Rosy</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('img/cookie.jpeg');"></div>
+                <div class="carousel-caption">
+                    <h2>Cookie Cat</h2>
+                </div>
+            </div>
+            <div class="item active">
+                <div class="fill" style="background-image:url('img/droid.png');"></div>
+                <div class="carousel-caption">
+                    <h2>Am I the cat you are looking for?</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('img/fat.jpeg');"></div>
+                <div class="carousel-caption">
+                    <h2>Fat Cat</h2>
+                </div>
+            </div>
+            <div class="item active">
+                <div class="fill" style="background-image:url('img/fluffy.png');"></div>
+                <div class="carousel-caption">
+                    <h2>Fluffy Cat</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('img/gentleman.jpeg');"></div>
+                <div class="carousel-caption">
+                    <h2>Gentleman Cat</h2>
+                </div>
+            </div>
+            <div class="item active">
+                <div class="fill" style="background-image:url('img/grumpy.png');"></div>
+                <div class="carousel-caption">
+                    <h2>Grumpy Cat</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('img/keyboard.png');"></div>
+                <div class="carousel-caption">
+                    <h2>Keyboard Cat</h2>
+                </div>
+            </div>
+            <div class="item active">
+                <div class="fill" style="background-image:url('img/lazy.jpeg');"></div>
+                <div class="carousel-caption">
+                    <h2>Lazy Cat</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('img/nyah.png');"></div>
+                <div class="carousel-caption">
+                    <h2>Nyah Cat</h2>
+                </div>
+            </div>
+            <div class="item active">
+                <div class="fill" style="background-image:url('img/persian.png');"></div>
+                <div class="carousel-caption">
+                    <h2>Persian Cat</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('img/playful.jpeg');"></div>
+                <div class="carousel-caption">
+                    <h2>Playful Cat</h2>
+                </div>
+            </div>
+            <div class="item active">
+                <div class="fill" style="background-image:url('img/potter.jpeg');"></div>
+                <div class="carousel-caption">
+                    <h2>Harry Potter Cat</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('img/pusheen.png');"></div>
+                <div class="carousel-caption">
+                    <h2>Pusheen</h2>
+                </div>
+            </div>
+            <div class="item active">
+                <div class="fill" style="background-image:url('img/ragdoll.png');"></div>
+                <div class="carousel-caption">
+                    <h2>Ragdoll Cat</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('img/sad.png');"></div>
+                <div class="carousel-caption">
+                    <h2>Sad Cat</h2>
+                </div>
+            </div>
+            <div class="item active">
+                <div class="fill" style="background-image:url('img/shaggy.jpeg');"></div>
+                <div class="carousel-caption">
+                    <h2>Shaggy Cat</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('img/shocked.png');"></div>
+                <div class="carousel-caption">
+                    <h2>Shocked Cat</h2>
+                </div>
+            </div>
+            <div class="item active">
+                <div class="fill" style="background-image:url('img/skunk.png');"></div>
+                <div class="carousel-caption">
+                    <h2>Skunk Cat</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('img/sleepy.jpeg');"></div>
+                <div class="carousel-caption">
+                    <h2>Sleepy Cat</h2>
+                </div>
+            </div>
+            <div class="item active">
+                <div class="fill" style="background-image:url('img/sparkle.jpeg');"></div>
+                <div class="carousel-caption">
+                    <h2>Sparkle Cat</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('img/spot.png');"></div>
+                <div class="carousel-caption">
+                    <h2>Spot Cat</h2>
+                </div>
+            </div>
+            <div class="item active">
+                <div class="fill" style="background-image:url('img/tabby.jpeg');"></div>
+                <div class="carousel-caption">
+                    <h2>Tabby Cat</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('img/tabby.png');"></div>
+                <div class="carousel-caption">
+                    <h2>Tabby Cat</h2>
+                </div>
+            </div>
+            <div class="item active">
+                <div class="fill" style="background-image:url('img/tuxedo.png');"></div>
+                <div class="carousel-caption">
+                    <h2>Tuxedo Cat</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+
+    </header>
+
+    <!-- Page Content -->
+    <!-- <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>Full Slider by Start Bootstrap</h1>
+                <p>The background images for the slider are set directly in the HTML using inline CSS. The rest of the styles for this template are contained within the <code>full-slider.css</code>file.</p>
+            </div>
+        </div> -->
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Emergencats 2016</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+
+</body>
+
 </html>

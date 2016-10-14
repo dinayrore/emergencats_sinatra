@@ -20,50 +20,31 @@ post '/api/cat' do
   end
 end
 
-get '/api/cat'
+get '/api/cats' do
+  name = params['name']
+  gender = params['gender']
+  species = params['species']
+  attitude = params['attitude']
 
-# require 'active_record'
-# require 'yaml'
-# require_relative 'model/cat'
-#
-# ActiveRecord::Base.establish_connection(ENV['DATABASE_URL'])
-#
-# before do
-#   content_type :json
-# end
-#
-# after do
-#   ActiveRecord::Base.connection.close
-# end
-#
-# # POST /api/ - create, read request body as JSON
-# post '/api/' do
-#   thing = Class.create(
-#     name: params['name'],
-#     number: params['number']
-#   )
-#
-#   status 201
-#   thing.to_json
-# end
-#
-# # GET /api/ - return individual/all as JSON
-# get '/api/' do
-#   name = params['name']
-#   number = params['number']
-#
-#
-#   if !name.nil?
-#     thing = Class.where(name: name)
-#   elsif !number.nil?
-#     thing = Class.where(number: number)
-#   else
-#     thing = Class.all.order(name: :DESC, number: :ASC)
-#   end
-#
-#   thing.to_json
-# end
-#
+  if !name.nil?
+    cat = Cat.where(name: name)
+  elsif !gender.nil?
+    cat = Cat.where(gender: gender)
+  elsif !species.nil?
+    cat = Cat.where(species: species)
+  elsif !attitude.nil?
+    cat = Cat.where(attitude: attitude)
+  else
+    cat = Cat.all.order(name: :DESC)
+  end
+
+  status 200
+  cat.to_json
+end
+
+put '/api/cat/:id' do |id|
+  status 200
+end
 # # PUT /api/ - update & read request body as JSON
 # put '/api/thing/:id' do |id|
 #   name = params['name']
@@ -78,8 +59,8 @@ get '/api/cat'
 #   thing.to_json
 # end
 #
-# # DELETE /api/ - delete & return success/failure status code
-# delete '/api/thing/:id' do |id|
+
+delete '/api/thing/:id' do |id|
 #   thing = Class.find_by_id(id)
 #   thing.destroy
-# end
+end
