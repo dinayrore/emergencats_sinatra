@@ -1,36 +1,46 @@
-// jQuery for page scrolling feature
-$('.nav').click(function() {
-  var id = $(this).attr('id');
-  $('html, body').animate({
-      scrollTop: ($('#' + id + '.section').offset().top)
-  }, 1000);
-});
+// Display Individual Cat by name
+$('#rufus-beans').click(function () {
+  var cat = 'rufus'
+  displayCat(cat)
+})
 
-
-
-$('#create').click(function() {
-  var user = $('#user-id').val()
-  var title = $('#task-title').val()
-  var status = $('#status').val()
-  var priority = $('#priority').val()
-
-var $catName = $('.catName')
-
-function createCats () {
-  return $.ajax({
-      method: 'POST',
-      url: '/api/cat',
-      dataType: 'json'
-      data: {
-        name: $catName.val();
-        gender: $taskGender.val();
-        species: $taskSpecies.val();
-        attitude: $taskAttitude.val()
-      },
-
-    });
+function displayCat (cat) {
+  var catName = $('name')
+  var catGender = $('gender')
+  var catSpecies = $('species')
+  var catAttitude = $('attitude')
+  $.ajax({
+    method: 'GET',
+    url: '/api/cats',
+    dataType: 'json',
+    data: {
+      name: catName,
+      gender: catGender,
+      species: catSpecies,
+      attitude: catAttitude
+    }
+  })
 }
 
-module.exports = createCats
+//
+// $('#create').click(function() {
+//
+//
+// var $catName = $('.catName')
+//
+// function createCats () {
+//   return $.ajax({
+//       method: 'POST',
+//       url: '/api/cat',
+//       dataType: 'json'
+//       data: {
+//         name: $catName.val();
+//         gender: $taskGender.val();
+//         species: $taskSpecies.val();
+//         attitude: $taskAttitude.val()
+//       },
+//
+//     });
+// }
 
-// click on paw hide main site stuff show that cat
+module.exports = createCats
