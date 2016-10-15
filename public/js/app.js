@@ -1,26 +1,19 @@
+// var cat = new DatabaseCats();
+
 // Display Individual Cat by name
 $('#rufus-beans').click(function () {
-  var cat = 'rufus'
-  displayCat(cat)
+  displayCat()
 })
 
-function displayCat (cat) {
-  var catName = $('name')
-  var catGender = $('gender')
-  var catSpecies = $('species')
-  var catAttitude = $('attitude')
+function displayCat () {
   $.ajax({
     method: 'GET',
-    url: '/api/cats',
+    url: '/api/cats?name=Rufus',
     dataType: 'json',
-    data: {
-      name: catName,
-      gender: catGender,
-      species: catSpecies,
-      attitude: catAttitude
-    }
+    data: {}
   })
 }
+
 
 //
 // $('#create').click(function() {
@@ -43,4 +36,4 @@ function displayCat (cat) {
 //     });
 // }
 
-module.exports = createCats
+// module.exports = createCats
