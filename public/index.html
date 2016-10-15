@@ -30,6 +30,7 @@
 </head>
 
 <body>
+  <div id="top"></div>
 
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -42,27 +43,27 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#index.html"><img id="emergencat" src="img/emergencat.gif"></a>
+                <a class="navbar-brand" href="#top"><img class="page-scroll" src="img/emergencat.gif"></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#"><img class="create" src="img/create.png"></a>
+                        <a id="#add" href="#create"><img class="page-scroll" src="img/create.png"></a>
                     </li>
                     <li>
-                        <a href="#"><img class="read" src="img/all.png"></a>
+                        <a href="#all"><img class="page-scroll" src="img/all.png"></a>
                     </li>
                     <li>
-                        <a href="#"><img class="update" src="img/edit.png"></a>
+                        <a href="#edit"><img class="page-scroll" src="img/edit.png"></a>
                     </li>
                     <li>
-                        <a href="#"><img class="delete" src="img/delete.png"></a>
+                        <a href="#delete"><img class="page-scroll" src="img/delete.png"></a>
                     </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
-        </div>
+        </div>``
         <!-- /.container -->
     </nav>
 
@@ -186,14 +187,315 @@
     </header>
 
     <!-- Page Content -->
-    <div class="container">
 
-        <div class="row">
-            <div class="col-lg-12">
-              <h4>When you absolutely need cats:</h4>
-              <h1>EMERGENCATS</h1>
+    <!-- Add Cat Section -->
+    <section id="create">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                  <h1>EMERGENCATS:</h1>
+                  <h4>When you need a cat right meow!</h4>
+                  <h3>Create Your Catacter...</h3>
+                </div>
+                <div class="col-lg-8 col-lg-offset-2">
+                    <form id="contactForm" novalidate>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Name</label>
+                                <input type="text" class="form-control" placeholder="Enter a name..." id="name">
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Gender</label>
+                                <input type="text" class="form-control" placeholder="M or F" id="gender">
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Species</label>
+                                <input type="text" class="form-control" placeholder="Enter a species..." id="species">
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Attitude</label>
+                                <input type="text" class="form-control" placeholder="Enter cattitude..." id="attitude">
+                            </div>
+                        </div>
+                        <br>
+                        <div id="success"></div>
+                        <div class="row">
+                            <div class="form-group col-xs-12">
+                                <button type="submit" class="btn btn-success btn-lg">Mreow</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
+    </section>
+
+    <!-- All Cat Grid Section -->
+      <section id="portfolio">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-12 text-center">
+                      <h2>ALL OF THE CATS</h2>
+                  </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-4 portfolio-item">
+                  <a href="#rufus" class="portfolio-link" data-toggle="modal">
+                      <div class="caption"></div>
+                      <img src="img/rufus.jpg" class="img-responsive" alt="">
+                  </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                  <a href="#jimothy" class="portfolio-link" data-toggle="modal">
+                      <div class="caption"></div>
+                      <img src="img/ragdoll.png" class="img-responsive" alt="">
+                  </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                  <a href="#frisk" class="portfolio-link" data-toggle="modal">
+                      <div class="caption"></div>
+                      <img src="img/sparkle.jpeg" class="img-responsive" alt="">
+                  </a>
+              </div>
+              <div class="col-sm-4 portfolio-item">
+                <a href="#rika" class="portfolio-link" data-toggle="modal">
+                    <div class="caption"></div>
+                    <img src="img/calico.png" class="img-responsive" alt="">
+                </a>
+              </div>
+              <div class="col-sm-4 portfolio-item">
+                <a href="#miss-kitty" class="portfolio-link" data-toggle="modal">
+                    <div class="caption"></div>
+                    <img src="img/miss-kitty.jpeg" class="img-responsive" alt="">
+                </a>
+              </div>
+              <div class="col-sm-4 portfolio-item">
+                <a href="#clark" class="portfolio-link" data-toggle="modal">
+                    <div class="caption"></div>
+                    <img src="img/clark.jpeg" class="img-responsive" alt="">
+                </a>
+              </div>
+              <div class="col-sm-4 portfolio-item">
+                <a href="#chow" class="portfolio-link" data-toggle="modal">
+                    <div class="caption"></div>
+                    <img src="img/chow.jpeg" class="img-responsive" alt="">
+                </a>
+              </div>
+              <div class="col-sm-4 portfolio-item">
+                <a href="#shadow" class="portfolio-link" data-toggle="modal">
+                    <div class="caption"></div>
+                    <img src="img/shadow.jpeg" class="img-responsive" alt="">
+                </a>
+              </div>
+              <div class="col-sm-4 portfolio-item">
+                <a href="#mit" class="portfolio-link" data-toggle="modal">
+                    <div class="caption"></div>
+                    <img src="img/mit.jpeg" class="img-responsive" alt="">
+                </a>
+              </div>
+              <div class="col-sm-4 portfolio-item">
+                <a href="#lilly" class="portfolio-link" data-toggle="modal">
+                    <div class="caption"></div>
+                    <img src="img/lilly.png" class="img-responsive" alt="">
+                </a>
+              </div>
+              <div class="col-sm-4 portfolio-item">
+                <a href="#luke" class="portfolio-link" data-toggle="modal">
+                    <div class="caption"></div>
+                    <img src="img/luke.png" class="img-responsive" alt="">
+                </a>
+              </div>
+              <div class="col-sm-4 portfolio-item">
+                <a href="#rosy" class="portfolio-link" data-toggle="modal">
+                    <div class="caption"></div>
+                    <img src="img/fat.jpeg" class="img-responsive" alt="">
+                </a>
+              </div>
+              <div class="col-sm-4 portfolio-item">
+                <a href="#carson" class="portfolio-link" data-toggle="modal">
+                    <div class="caption"></div>
+                    <img src="img/potter.jpeg" class="img-responsive" alt="">
+                </a>
+              </div>
+              <div class="col-sm-4 portfolio-item">
+                <a href="#mimee" class="portfolio-link" data-toggle="modal">
+                    <div class="caption"></div>
+                    <img src="img/mimee.jpeg" class="img-responsive" alt="">
+                </a>
+              </div>
+              <div class="col-sm-4 portfolio-item">
+                <a href="#tali" class="portfolio-link" data-toggle="modal">
+                    <div class="caption"></div>
+                    <img src="img/tali.jpeg" class="img-responsive" alt="">
+                </a>
+              </div>
+              <div class="col-sm-4 portfolio-item">
+                <a href="#soren" class="portfolio-link" data-toggle="modal">
+                    <div class="caption"></div>
+                    <img src="img/soren.jpeg" class="img-responsive" alt="">
+                </a>
+              </div>
+              <div class="col-sm-4 portfolio-item">
+                <a href="#treb" class="portfolio-link" data-toggle="modal">
+                    <div class="caption"></div>
+                    <img src="img/treb.jpeg" class="img-responsive" alt="">
+                </a>
+              </div>
+              <div class="col-sm-4 portfolio-item">
+                <a href="#all-cats" class="portfolio-link" data-toggle="modal">
+                    <div class="caption"></div>
+                    <img src="img/pusheen.png" class="img-responsive" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+      </section>
+
+    <!-- All Cat Modals -->
+      <div class="portfolio-modal modal fade" id="rufus" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body text-center">
+                            <h2>Rufus</h2>
+                            <img src="img/rufus.jpg" class="img-responsive img-centered" alt="">
+                            <ul class="list-inline item-details">
+                                <li>Name: </li>
+                                <li>Gender: </li>
+                                <li>Species: </li>
+                                <li>Attitude: </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="portfolio-modal modal fade" id="jimothy" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body text-center">
+                            <h2>Jimothy</h2>
+                            <img src="img/ragdoll.png" class="img-responsive img-centered" alt="">
+                            <ul class="list-inline item-details">
+                                <li>Name: </li>
+                                <li>Gender: </li>
+                                <li>Species: </li>
+                                <li>Attitude: </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+    <!-- Edit Cat Section -->
+    <section id="edit">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                  <h3>Update Cat Stats</h3>
+                </div>
+                <div class="col-lg-8 col-lg-offset-2">
+                    <form id="contactForm" novalidate>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Name</label>
+                                <input type="text" class="form-control" placeholder="Enter NEW name..." id="new-name">
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Attitude</label>
+                                <input type="text" class="form-control" placeholder="Enter NEW cattitude..." id="new-attitude">
+                            </div>
+                        </div>
+                        <br>
+                        <div id="success"></div>
+                        <div class="row">
+                            <div class="form-group col-xs-12">
+                                <button type="submit" class="btn btn-success btn-lg">Purreow</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Delete Cat Section -->
+    <section id="delete">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                  <h3>Remeowve Cat</h3>
+                </div>
+                <div class="col-lg-8 col-lg-offset-2">
+                    <form id="contactForm" novalidate>
+                      <div class="row control-group">
+                          <div class="form-group col-xs-12 floating-label-form-group controls">
+                              <label>Name</label>
+                              <input type="text" class="form-control" placeholder="Enter a name..." id="name">
+                          </div>
+                      </div>
+                      <div class="row control-group">
+                          <div class="form-group col-xs-12 floating-label-form-group controls">
+                              <label>Gender</label>
+                              <input type="text" class="form-control" placeholder="M or F" id="gender">
+                          </div>
+                      </div>
+                      <div class="row control-group">
+                          <div class="form-group col-xs-12 floating-label-form-group controls">
+                              <label>Species</label>
+                              <input type="text" class="form-control" placeholder="Enter a species..." id="species">
+                          </div>
+                      </div>
+                      <div class="row control-group">
+                          <div class="form-group col-xs-12 floating-label-form-group controls">
+                              <label>Attitude</label>
+                              <input type="text" class="form-control" placeholder="Enter cattitude..." id="attitude">
+                          </div>
+                      </div>
+                      <br>
+                      <div id="success"></div>
+                      <div class="row">
+                          <div class="form-group col-xs-12">
+                              <button type="submit" class="btn btn-success btn-lg">Hiss</button>
+                          </div>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </section>
+
+
+
+
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>

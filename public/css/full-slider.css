@@ -9,10 +9,24 @@ body {
     height: 100%;
 }
 
-h1,
-h4 {
-  text-align: center;
+body {
+    margin: 0;
+    padding: 0;
 }
+
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: lightgrey;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section {
+    height: 100%;
+    padding-top: 20px;
+}
+
 .carousel,
 .item,
 .active {
@@ -31,11 +45,7 @@ h4 {
   top: 100px;
 }
 
-.create,
-.read,
-.update,
-.delete,
-#emergencat {
+.page-scroll {
   width: 50px;
   height: 50px;
   border: 0;
@@ -51,4 +61,72 @@ h4 {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+}
+
+.img-responsive {
+  position: relative;
+  float: left;
+  width:  400px;
+  height: 300px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img-centered {
+  margin: 0 auto;
+}
+
+#portfolio .portfolio-item {
+  margin: 0 0 15px;
+  right: 0;
+}
+#portfolio .portfolio-item .portfolio-link {
+  display: block;
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+}
+#portfolio .portfolio-item .portfolio-link .caption {
+  background: rgba(237, 237, 237, 0.68);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+}
+#portfolio .portfolio-item .portfolio-link .caption:hover {
+  opacity: 1;
+}
+#portfolio .portfolio-item .portfolio-link .caption .caption-content {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  font-size: 20px;
+  text-align: center;
+  top: 50%;
+  margin-top: -12px;
+  color: white;
+}
+#portfolio .portfolio-item .portfolio-link .caption .caption-content i {
+  margin-top: -12px;
+}
+#portfolio .portfolio-item .portfolio-link .caption .caption-content h3,
+#portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
+  margin: 0;
+}
+#portfolio * {
+  z-index: 2;
+}
+@media (min-width: 767px) {
+  #portfolio .portfolio-item {
+    margin: 0 0 30px;
+  }
+}
+
+#form {
+  align-self: center;
+  display: none;
 }
