@@ -24,11 +24,11 @@ h4 {
 }
 
 .beans {
-  width:100px;
-  height: 100px;
+  width:200px;
+  height: 200px;
   border: 0;
   position: relative;
-  top: 50px;
+  top: 100px;
 }
 
 .create,
