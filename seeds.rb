@@ -17,7 +17,7 @@ class Cats
       species = line[2]
       attitude = line[3]
 
-      User.create(name: name, gender: gender, species: species,
+      Cats.create(name: name, gender: gender, species: species,
                   attitude: attitude)
     end
   end
