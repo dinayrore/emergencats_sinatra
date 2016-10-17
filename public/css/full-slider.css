@@ -63,3 +63,8 @@ nav {
     background-size: cover;
     -o-background-size: cover;
 }
+
+.dropdown-menu {
+    width: 300px !important;
+    height: 400px !important;
+}
