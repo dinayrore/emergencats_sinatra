@@ -1,6 +1,6 @@
 # Emergencats!
 
-To run the application..., please visit the heroku link:
+When you need a cat right meow, please visit:
 
 ## Getting Started
 
@@ -35,18 +35,15 @@ Download postgresql
   2. Move the app to the `/Applications` file.
   3. Double Click on app to run the program.
 
-Download postico from:
+(Optional) Download postico from:
   1. Go to https://eggerapps.at/postico/
   2. Move the app to the `/Applications` file.
   3. Double Click on app to run the program.
 
-Download postman from:
+(Optional) Download postman from:
   1. Go to https://www.getpostman.com/
   2. Move the app to the `/Applications` file.
   3. Double Click on app to run the program.
-
-## App Deployment
-To run the app itself visit the heroku site link:
 
 ### Deployment
 
@@ -76,8 +73,12 @@ Please complete the following procedure to run the program on a live system:
 ## Acknowledgments
 
 * The Iron Yard - Durham
-* Bryce Darling and Jimothy
-* Alyssa Pratt and Frisk
-* Jefferson Neel and Rika
-* Gabriel Estes and Rosy
-* Nate Semmler and Carson
+
+* Bryce Darling - Jimothy
+* Alyssa Pratt - Frisk
+* Jefferson Neel - Rika
+* Gabriel Estes - Rosy
+* Nate Semmler - Carson
+* Rebecca Teichmann - Miss Kitty, Shadow, Mit, Lilly & Luke
+* Jennifer Teichmann - Clark & Chow
+* Tracee - Mimee, Tali, Soren, & Treb

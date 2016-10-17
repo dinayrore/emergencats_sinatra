@@ -79,9 +79,14 @@
         <div class="carousel-inner">
           <!-- <% @cats.each do |cat| %>
             <div class="item active">
-              <%= cat.image %>
               <img src="/images/<%= cat.name %>.jpg">
+              Name: <%= cat.name %>
+              Gender: <%= cat.gender %>
+              Species: <%= cat.species %>
+              Attitude: <%= cat.attitude %>
             </div>
+            <a href="<%= cat.name %>" class="portfolio-link" data-toggle="modal"><img class="beans" src="img/beans.png"></a>
+
           <% end > -->
 
             <div class="item active">
