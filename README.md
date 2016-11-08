@@ -30,12 +30,18 @@ Install rbenv & ruby-build - to install and compile different versions of Ruby c
 Install ruby 2.3.1 - the latest version of Ruby
   1. Close and reopen Terminal.```rbenv install 2.3.1```
   2. After quite some time, run:```rbenv global 2.3.1```
-Once you have completed the above installation processes your system should be ready to launch the program!
 
 Download postgresql
   1. Go to http://postgresapp.com/
-  2. Move the app to the `/Applications` file.
+  2. Move the app to the /Applications file folder.
   3. Double Click on app to run the program.
+
+Install postgresql using brew
+```
+brew install postgresql
+```
+
+Once you have completed the above installation processes your system is ready to launch the program!
 
 (Optional) Download postico from:
   1. Go to https://eggerapps.at/postico/
@@ -61,13 +67,14 @@ Please complete the following procedure to run the program on a live system:
 
 ### Running Web app locally
 
-  1. Still in Terminal, run `bundle exec shotgun app.rb` to run the app utilizing sinatra, while allowing changes to be made to the code for testing purposes.
+  1. In Terminal, run `bundle exec shotgun app.rb` to run the app utilizing sinatra, while allowing changes to be made to the code for testing purposes.
   2. Go to your web browser, enter the localhost:9393/index.html
   3. ALWAYS READ all instructions!
 
 ## Built With
 
 * Atom
+* Postgresql
 
 ## Authors
 
