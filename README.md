@@ -59,7 +59,7 @@ Please complete the following procedure to run the program on a live system:
   6. Run `bundle exec rake db:migrate` to create the necessary tables for the database.
 
 
-## Running Web app locally
+### Running Web app locally
 
   1. Still in Terminal, run `bundle exec shotgun app.rb` to run the app utilizing sinatra, while allowing changes to be made to the code for testing purposes.
   2. Go to your web browser, enter the localhost:9393/index.html
