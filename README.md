@@ -69,7 +69,6 @@ Please complete the following procedure to run the program on a live system:
 
   1. In Terminal, run `bundle exec shotgun app.rb` to run the app utilizing sinatra, while allowing changes to be made to the code for testing purposes.
   2. Go to your web browser, enter the localhost:9393/index.html
-  3. ALWAYS READ all instructions!
 
 ## Built With
 
