@@ -1,6 +1,8 @@
-# Emergencats!
+# Emergencats Sinatra App!
 
 When you need a cat right meow, please visit:
+
+This version of Emergencats is almost complete, but still under development.  If you are interested in contributing to this project and further collaboration towards the completion of Emergencats using Sinatra, please contact me, fork this repository and/or make a pull request. 
 
 ## Getting Started
 
@@ -49,8 +51,9 @@ Download postgresql
 
 Please complete the following procedure to run the program on a live system:
   1. Open Terminal.
-  2. Change your directory to the one that which you have saved this zip file.`cd folder_name`
-  3. Run `gem install bundler` and then run `bundle` or `bundle install` to run the Gemfile on your machine.
+  2. Change your directory to the one that which you would like to save this project. `$ cd folder_name`
+  3. Then run the commands `$ git clone https://github.com/kteich88/emergencats_sinatra.git` and `$ cd emergencats_sinatra`
+  3. Run `gem install bundler` and then run `bundle` or `bundle install` to install the gems necessary for this project (specified in Gemfile).
   4. Open postgresql and create your database using the following code: `CREATE DATABASE dbname;` or run `bundle exec rake db:create`
   5.  Back in Terminal input `export DATABASE_URL=postgres://YOURUSER@localhost:5432/SQLDATABASENAME` (replace YOURUSER with your username and SQLDATABASENAME with the database you created).
   6. Run `bundle exec rake db:migrate` to create the necessary tables for the database.
@@ -73,7 +76,6 @@ Please complete the following procedure to run the program on a live system:
 ## Acknowledgments
 
 * The Iron Yard - Durham
-
 * Bryce Darling - Jimothy
 * Alyssa Pratt - Frisk
 * Jefferson Neel - Rika
